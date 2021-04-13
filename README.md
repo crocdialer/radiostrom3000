@@ -1,2 +1,2 @@
-# empty loranger device
-generic lora-connected device
+# radiostrom3000
+lora connected voltage/current sensor

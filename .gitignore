@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 .pio
 .pioenvs
 .piolibdeps
 .clang_complete
 .gcc-flags.json
-=======
 # Prerequisites
 *.d
 
@@ -37,4 +35,3 @@
 *.exe
 *.out
 *.app
->>>>>>> 34a63b18a70854cb3ba88e2661a3d9a1419155e6
