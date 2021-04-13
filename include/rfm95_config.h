@@ -85,12 +85,13 @@ static bool setup(const config_t &the_config, driver_struct_t &out_driver)
     // init the driver layer
     if(!out_driver.driver->init()){ return false; }
 
-    // TODO: has no effect
-    if(!out_driver.driver->setFrequency(the_config.frequency)){ return false; }
-
     // set tx-power
     delay(100);
     out_driver.driver->setTxPower(the_config.tx_power, false);
+    
+    // TODO: has no effect
+    delay(100);
+    if(!out_driver.driver->setFrequency(the_config.frequency)){ return false; }
 
     // 10ms carrier-sensing before transmit
     out_driver.driver->setCADTimeout(the_config.cad_timeout);
